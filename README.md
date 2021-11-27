@@ -6,7 +6,7 @@ A macOS screen saver of the “Be right back“ page Apple uses when refreshing 
 
 ## Installation
 **Either:**  
-• [Download here](./Resources/BeRightBack.saver)  
+• [Download here](./Resources/BeRightBack.saver.zip)  
 • Open “BeRightBack.saver”  
 **OR:**  
 • Clone this repo  
