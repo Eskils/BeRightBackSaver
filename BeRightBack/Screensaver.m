@@ -17,8 +17,11 @@
     return @"Be right back.";
 }
 
-+(NSFont*)taglineFont {
-    return [NSFont systemFontOfSize:64 weight: NSFontWeightMedium];
++(CGFloat)taglineFontsize { return 64.0; }
++(CGFloat)subtextFontsize { return 18.0; }
+
++(NSFont*)taglineFontOfSize: (CGFloat)fontSize {
+    return [NSFont systemFontOfSize:fontSize weight: NSFontWeightMedium];
 }
 
 +(NSString*)subtextFromUD: (ScreenSaverDefaults*)ud {
@@ -27,8 +30,8 @@
     else { return @""; }
 }
 
-+(NSFont*)subtextFont {
-    return [NSFont systemFontOfSize:18];
++(NSFont*)subtextFontOfSize:(CGFloat)fontSize {
+    return [NSFont systemFontOfSize:fontSize];
 }
 
 +(NSURL*)videoUrlFromBundle:(NSBundle*)bundle {

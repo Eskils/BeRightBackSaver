@@ -29,19 +29,23 @@
     self.player = [AVPlayer playerWithURL: self.videoURL];
     
     playerView.player = self.player;
-    playerView.showsTimecodes = NO;
+    if (@available(macOS 10.15, *)) {
+        playerView.showsTimecodes = NO;
+        playerView.allowsPictureInPicturePlayback = NO;
+    }
     playerView.showsFrameSteppingButtons = NO;
-    playerView.showsSharingServiceButton = NO;
+    if (@available(macOS 10.13, *)) {
+        playerView.showsSharingServiceButton = NO;
+        playerView.updatesNowPlayingInfoCenter = NO;
+    }
     playerView.showsFullScreenToggleButton = NO;
-    playerView.updatesNowPlayingInfoCenter = NO;
-    playerView.allowsPictureInPicturePlayback = NO;
     playerView.controlsStyle = AVPlayerViewControlsStyleNone;
     [self addSubview: playerView];
     [self.player play];
     
     #pragma mark - BRB Label Setup
     NSTextField * BRBLabel = [NSTextField labelWithString: [Screensaver tagline]];
-    [BRBLabel setFont: [Screensaver taglineFont]];
+    [BRBLabel setFont: [Screensaver taglineFontOfSize:[Screensaver taglineFontsize]]];
     [BRBLabel setTextColor: [Screensaver textColor]];
     [self addSubview: BRBLabel];
     
@@ -49,7 +53,7 @@
     NSTextField * subLabel = [NSTextField labelWithString: [Screensaver subtextFromUD:self.ud]];
     subLabel.maximumNumberOfLines = 0;
     subLabel.alignment = NSTextAlignmentCenter;
-    [subLabel setFont: [Screensaver subtextFont]];
+    [subLabel setFont: [Screensaver subtextFontOfSize:[Screensaver subtextFontsize]]];
     [subLabel setTextColor: [Screensaver textColor]];
     [self addSubview: subLabel];
     
@@ -65,8 +69,8 @@
     
     if (self.isPreview) {
         width /= 4; height /= 4;
-        [BRBLabel setFont: [BRBLabel.font fontWithSize: 64 / 3]];
-        [subLabel setFont: [subLabel.font fontWithSize: 18 / 2]];
+        [BRBLabel setFont: [Screensaver taglineFontOfSize:[Screensaver taglineFontsize] / 3]];
+        [subLabel setFont: [Screensaver subtextFontOfSize:[Screensaver subtextFontsize] / 2]];
         BRBLabelPadddingTop = 14;
         subLabelPadddingTop = 2;
     }

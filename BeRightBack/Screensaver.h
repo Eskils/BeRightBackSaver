@@ -14,10 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(NSColor*)textColor;
 +(NSString*)tagline;
-+(NSFont*)taglineFont;
 +(NSURL*)videoUrlFromBundle:(NSBundle*)bundle;
 +(NSString*)subtextFromUD: (ScreenSaverDefaults*)ud;
-+(NSFont*)subtextFont;
++(NSFont*)subtextFontOfSize:(CGFloat)fontSize;
++(NSFont*)taglineFontOfSize:(CGFloat)fontSize;
++(CGFloat)subtextFontsize;
++(CGFloat)taglineFontsize;
 
 
 @end

@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		6B41678B27525AA80051BFA3 /* thumbnail.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 6B8CDFAA27525732001C1A9D /* thumbnail.tiff */; };
 		6B4E857C2752705B00B9C054 /* app-covers-apple-outline.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6B4E857B2752705B00B9C054 /* app-covers-apple-outline.mp4 */; };
+		6B616E902752B00F006DC1C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B616E8F2752B00F006DC1C3 /* AppDelegate.m */; };
+		6B616E922752B010006DC1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B616E912752B010006DC1C3 /* Assets.xcassets */; };
+		6B616E952752B010006DC1C3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B616E932752B010006DC1C3 /* MainMenu.xib */; };
+		6B616E972752B010006DC1C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B616E962752B010006DC1C3 /* main.m */; };
+		6B616E9E2752B024006DC1C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B616E9D2752B024006DC1C3 /* ViewController.m */; };
+		6B616E9F2752B11F006DC1C3 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8CDF7B2750B802001C1A9D /* VideoView.m */; };
+		6B616EA02752B123006DC1C3 /* Screensaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8CDF842750BF1F001C1A9D /* Screensaver.m */; };
+		6B616EA12752B127006DC1C3 /* app-covers-apple-outline.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6B4E857B2752705B00B9C054 /* app-covers-apple-outline.mp4 */; };
+		6B616EA22752B1DF006DC1C3 /* BeRightBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8CDF712750B784001C1A9D /* BeRightBackView.m */; };
 		6B8CDF702750B784001C1A9D /* BeRightBackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8CDF6F2750B784001C1A9D /* BeRightBackView.h */; };
 		6B8CDF722750B784001C1A9D /* BeRightBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8CDF712750B784001C1A9D /* BeRightBackView.m */; };
 		6B8CDF7C2750B802001C1A9D /* VideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8CDF7A2750B802001C1A9D /* VideoView.h */; };
@@ -20,6 +29,15 @@
 
 /* Begin PBXFileReference section */
 		6B4E857B2752705B00B9C054 /* app-covers-apple-outline.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "app-covers-apple-outline.mp4"; sourceTree = "<group>"; };
+		6B616E8C2752B00F006DC1C3 /* BeRightBackTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeRightBackTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B616E8E2752B00F006DC1C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B616E8F2752B00F006DC1C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B616E912752B010006DC1C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B616E942752B010006DC1C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6B616E962752B010006DC1C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B616E982752B010006DC1C3 /* BeRightBackTester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeRightBackTester.entitlements; sourceTree = "<group>"; };
+		6B616E9C2752B024006DC1C3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B616E9D2752B024006DC1C3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6B8CDF6C2750B784001C1A9D /* BeRightBack.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeRightBack.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8CDF6F2750B784001C1A9D /* BeRightBackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeRightBackView.h; sourceTree = "<group>"; };
 		6B8CDF712750B784001C1A9D /* BeRightBackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeRightBackView.m; sourceTree = "<group>"; };
@@ -32,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6B616E892752B00F006DC1C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B8CDF692750B784001C1A9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,10 +84,26 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		6B616E8D2752B00F006DC1C3 /* BeRightBackTester */ = {
+			isa = PBXGroup;
+			children = (
+				6B616E8E2752B00F006DC1C3 /* AppDelegate.h */,
+				6B616E8F2752B00F006DC1C3 /* AppDelegate.m */,
+				6B616E9C2752B024006DC1C3 /* ViewController.h */,
+				6B616E9D2752B024006DC1C3 /* ViewController.m */,
+				6B616E912752B010006DC1C3 /* Assets.xcassets */,
+				6B616E932752B010006DC1C3 /* MainMenu.xib */,
+				6B616E962752B010006DC1C3 /* main.m */,
+				6B616E982752B010006DC1C3 /* BeRightBackTester.entitlements */,
+			);
+			path = BeRightBackTester;
+			sourceTree = "<group>";
+		};
 		6B8CDF622750B784001C1A9D = {
 			isa = PBXGroup;
 			children = (
 				6B8CDF6E2750B784001C1A9D /* BeRightBack */,
+				6B616E8D2752B00F006DC1C3 /* BeRightBackTester */,
 				6B8CDF6D2750B784001C1A9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				6B8CDF6C2750B784001C1A9D /* BeRightBack.saver */,
+				6B616E8C2752B00F006DC1C3 /* BeRightBackTester.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +172,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6B616E8B2752B00F006DC1C3 /* BeRightBackTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B616E9B2752B010006DC1C3 /* Build configuration list for PBXNativeTarget "BeRightBackTester" */;
+			buildPhases = (
+				6B616E882752B00F006DC1C3 /* Sources */,
+				6B616E892752B00F006DC1C3 /* Frameworks */,
+				6B616E8A2752B00F006DC1C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeRightBackTester;
+			productName = BeRightBackTester;
+			productReference = 6B616E8C2752B00F006DC1C3 /* BeRightBackTester.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6B8CDF6B2750B784001C1A9D /* BeRightBack */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B8CDF752750B784001C1A9D /* Build configuration list for PBXNativeTarget "BeRightBack" */;
@@ -157,6 +216,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					6B616E8B2752B00F006DC1C3 = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					6B8CDF6B2750B784001C1A9D = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -176,11 +238,22 @@
 			projectRoot = "";
 			targets = (
 				6B8CDF6B2750B784001C1A9D /* BeRightBack */,
+				6B616E8B2752B00F006DC1C3 /* BeRightBackTester */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6B616E8A2752B00F006DC1C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B616EA12752B127006DC1C3 /* app-covers-apple-outline.mp4 in Resources */,
+				6B616E922752B010006DC1C3 /* Assets.xcassets in Resources */,
+				6B616E952752B010006DC1C3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B8CDF6A2750B784001C1A9D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +267,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6B616E882752B00F006DC1C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B616E9F2752B11F006DC1C3 /* VideoView.m in Sources */,
+				6B616EA22752B1DF006DC1C3 /* BeRightBackView.m in Sources */,
+				6B616E9E2752B024006DC1C3 /* ViewController.m in Sources */,
+				6B616E972752B010006DC1C3 /* main.m in Sources */,
+				6B616E902752B00F006DC1C3 /* AppDelegate.m in Sources */,
+				6B616EA02752B123006DC1C3 /* Screensaver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B8CDF682750B784001C1A9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,7 +292,72 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		6B616E932752B010006DC1C3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B616E942752B010006DC1C3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		6B616E992752B010006DC1C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BeRightBackTester/BeRightBackTester.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EUKTZ7725R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skillbreak.BeRightBackTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		6B616E9A2752B010006DC1C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BeRightBackTester/BeRightBackTester.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EUKTZ7725R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skillbreak.BeRightBackTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
 		6B8CDF732750B784001C1A9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -329,6 +480,7 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = BeRightBackView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.skillbreak.BeRightBack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +500,7 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = BeRightBackView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.skillbreak.BeRightBack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +512,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6B616E9B2752B010006DC1C3 /* Build configuration list for PBXNativeTarget "BeRightBackTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B616E992752B010006DC1C3 /* Debug */,
+				6B616E9A2752B010006DC1C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6B8CDF662750B784001C1A9D /* Build configuration list for PBXProject "BeRightBack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
